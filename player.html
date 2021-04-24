@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css?v=<?=time();?>"/>
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.2.45/css/materialdesignicons.min.css"/>
+  <title>NGRadio Clock</title>
+</head>
+<body class="preload">
+    <audio id="ng-radio" src="https://streaming.nationsglory.fr/NGRadio" preload="none"></audio>
+    <div id="duration-bar-container">
+        <div id="duration-bar"></div>
+    </div>  
+
+    <div id="background"></div>
+    <div class="main-container">
+        <div id="left-panel" class="panel side-panel optionnal hide">
+            <div id="left-cover-container" class="side-cover-container">
+                <div id="left-cover" class="side-cover"></div>
+                <span class="text" id="left-title">Chargement...</span>  
+                <span class="text" id="left-artist">Chargement...</span>
+            </div>
+        </div>
+    
+        <div id="center-panel" class="panel">
+            <div id="panel-title">
+                <h1 class="text" id="ngradio">NGRadio</h1>
+                <h1 class="text" id="listeners">Chargement...</h1>
+            </div>
+
+            <div class="scene">
+                <div class="carousel" id="carousel">
+                    <div class="carousel__cell">
+                        <div class="cover-container">
+                            <div id="cover0" class="cover"></div>
+                        </div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="cover-container">
+                            <div id="cover1" class="cover"></div>
+                        </div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="cover-container">
+                            <div id="cover2" class="cover"></div>
+                        </div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="cover-container">
+                            <div id="cover3" class="cover"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="info-list">
+                <h1 class="text" id="stream">Chargement...</h1>   
+                <div id="title-artist-box">
+                    <span class="text" id="title">Chargement...</span>  
+                    <span class="text" id="artist">Chargement...</span>
+                </div>
+                <div id="volume-bar-container">
+                    <div id="volume-bar" class="slider"></div>
+                </div>
+                <div id="buttons">
+                    <button id="youtube" class="mdi mdi-youtube"><a id="youtube-link" href=""></a></button>
+                    <button id="play-pause" class="mdi mdi-play"></button>
+                    <button id="planning" class="mdi mdi-calendar"></button>
+                </div> 
+            </div>
+        </div>   
+
+        <div id="right-panel" class="panel side-panel optionnal hide">
+            <div id="right-cover-container" class="side-cover-container">
+                <div id="right-cover" class="side-cover"></div>
+                <span class="text" id="right-title">Chargement...</span>  
+                <span class="text" id="right-artist">Chargement...</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/ngradio.js"></script>
+</body>
+
+</html>
